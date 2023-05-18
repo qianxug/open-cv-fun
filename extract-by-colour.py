@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-imgVec = cv.GaussianBlur(cv.resize(cv.imread('side-by-side.jpg'), (1000, 700))[250:600, 0:1000], (7, 7), 0)
+imgVec = cv.GaussianBlur(cv.resize(cv.imread('assets/side-by-side.jpg'), (1000, 700))[250:600, 0:1000], (7, 7), 0)
 imgVecHsv = cv.cvtColor(imgVec, cv.COLOR_BGR2HSV)
 
 maskGray = cv.inRange(imgVecHsv, (5, 20, 0), (30, 200, 90))

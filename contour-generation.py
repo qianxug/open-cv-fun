@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.resize(cv.imread('IMG_3823(2).jpg'), (1200, 800))
+image = cv.resize(cv.imread('assets/IMG_3823(2).jpg'), (1200, 800))
   
 # Grayscale
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)

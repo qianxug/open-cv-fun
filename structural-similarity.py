@@ -7,10 +7,10 @@ def numPixels(filepath):
     width, height = Image.open(filepath).size
     return width * height
 
-first = cv.imread('img1.png')
-second = cv.imread('img2.png')
-third = cv.imread('left.jpg')
-fourth = cv.imread('STD.jpg')
+first = cv.imread('assets/img1.png')
+second = cv.imread('assets/img2.png')
+third = cv.imread('assets/left.jpg')
+fourth = cv.imread('assets/STD.jpg')
 
 first_gray = cv.cvtColor(first, cv.COLOR_BGR2GRAY)
 second_gray = cv.cvtColor(second, cv.COLOR_BGR2GRAY)
