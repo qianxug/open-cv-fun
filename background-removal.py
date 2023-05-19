@@ -41,5 +41,3 @@ while True:
     
     if keyboard == 'q' or keyboard == 27:
         break
-
-    
