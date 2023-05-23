@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser(description='for generating contours and evaluating contour density')
-parser.add_argument('--input', type=str, help='path to a photo')
+parser.add_argument('--input', type=str, help='path to a photo', default="assets\side-by-side.jpg")
 
 args = parser.parse_args()
 
